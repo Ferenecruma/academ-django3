@@ -37,7 +37,7 @@ class RegistrationTestCase(TestCase):
         
         # Developer Notes:
         # To get unit tests working with the django-simple-captcha then follow:
-        # http://stackoverflow.com/questions/3159284/how-to-unit-test-a-form-with-a-captcha-field-in-django
+        # https://stackoverflow.com/questions/3159284/how-to-unit-test-a-form-with-a-captcha-field-in-django
         
         # Test
         client = Client()

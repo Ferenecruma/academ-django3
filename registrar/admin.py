@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 ## Special Thanks:
-## http://www.djangobook.com/en/2.0/chapter06.html
+## https://www.djangobook.com/en/2.0/chapter06.html
 #
 from registrar.models import FileUpload
 from registrar.models import Course

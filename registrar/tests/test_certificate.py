@@ -113,7 +113,7 @@ class CertificateTestCase(TestCase):
         response = client.post('/certificate_permalink_modal', { 'credit_id': 1, })
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'permalink_modal',response.content)
-        self.assertIn(b'http://www.academicstoday.ca/certificate/1',response.content)
+        self.assertIn(b'https://www.academicstoday.ca/certificate/1',response.content)
 
     def test_change_certificate_accessiblity(self):
         client = Client()

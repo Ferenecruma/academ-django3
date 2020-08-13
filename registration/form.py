@@ -88,4 +88,4 @@ class RegisterForm(forms.Form):
 
 
 # Captcha Setup:
-# http://django-simple-captcha.readthedocs.org/en/latest/usage.html#installation
+# https://django-simple-captcha.readthedocs.org/en/latest/usage.html#installation

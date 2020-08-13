@@ -43,7 +43,7 @@ class Command(BaseCommand):
             twitter_url="https://twitter.com/@srydzewski_AT",
             google_url="https://plus.google.com/u/0/108001172254765225648/posts",
             image_filename="sebastionrydzewski.png",
-            linkedin_url="http://ca.linkedin.com/pub/sebastian-rydzewski/5b/108/160",
+            linkedin_url="https://ca.linkedin.com/pub/sebastian-rydzewski/5b/108/160",
             email="srydzewski.AT@gmail.com",
         )
 
