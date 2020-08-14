@@ -3,10 +3,10 @@
 * @requires jQuery v1.2.6+
 *
 * Copyright (c) 2007 Christian Bach
-* Examples and docs at: https://tablesorter.com
+* Examples and docs at: http://tablesorter.com
 * Dual licensed under the MIT and GPL licenses:
-* https://www.opensource.org/licenses/mit-license.php
-* https://www.gnu.org/licenses/gpl.html
+* http://www.opensource.org/licenses/mit-license.php
+* http://www.gnu.org/licenses/gpl.html
 *
 * @type jQuery
 * @name tablesorter
@@ -1170,8 +1170,8 @@
 			};
 
 			// computeTableHeaderCellIndexes from:
-			// https://www.javascripttoolbox.com/lib/table/examples.php
-			// https://www.javascripttoolbox.com/temp/table_cellindex.html
+			// http://www.javascripttoolbox.com/lib/table/examples.php
+			// http://www.javascripttoolbox.com/temp/table_cellindex.html
 			ts.computeColumnIndex = function(trs) {
 				var matrix = [],
 				lookup = {},
@@ -1267,7 +1267,7 @@
 				}
 				// apply event handling to headers and/or additional headers (stickyheaders, scroller, etc)
 				$headers
-				// https://stackoverflow.com/questions/5312849/jquery-find-self;
+				// http://stackoverflow.com/questions/5312849/jquery-find-self;
 				.find(c.selectorSort).add( $headers.filter(c.selectorSort) )
 				.unbind('mousedown mouseup sort keyup '.split(' ').join(c.namespace + ' '))
 				.bind('mousedown mouseup sort keyup '.split(' ').join(c.namespace + ' '), function(e, external) {
