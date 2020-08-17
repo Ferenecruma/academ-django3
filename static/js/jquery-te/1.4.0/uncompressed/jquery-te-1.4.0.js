@@ -1,7 +1,7 @@
 /*!
  *
- * jQuery TE 1.4.0 , http://jqueryte.com/
- * Copyright (C) 2013, Fatih Koca (fattih@fattih.com), (http://jqueryte.com/about)
+ * jQuery TE 1.4.0 , https://jqueryte.com/
+ * Copyright (C) 2013, Fatih Koca (fattih@fattih.com), (https://jqueryte.com/about)
 
  * jQuery TE is provided under the MIT LICENSE.
  *
@@ -580,7 +580,7 @@
 				if(!toolbar.data("sourceOpened"))
 				{
 					var selectedTag = getSelectedNode(); // the selected node
-					var thisHrefLink = "http://"; // default the input value of the link-form-field
+					var thisHrefLink = "https://"; // default the input value of the link-form-field
 
 					// display the link-form-field
 					linkAreaSwitch(true);
@@ -730,10 +730,10 @@
 				var currentType = linktypes.data("linktype");
 				
 				// if selected type of e-mail
-				if(currentType=="1" && (linkinput.val()=="http://" || linkinput.is("[value^=http://]") || !linkinput.is("[value^=mailto]"))) 
+				if(currentType=="1" && (linkinput.val()=="https://" || linkinput.is("[value^=https://]") || !linkinput.is("[value^=mailto]"))) 
 					linkinput.val("mailto:");
-				else if(currentType!="1" && !linkinput.is("[value^=http://]"))
-						linkinput.val("http://");
+				else if(currentType!="1" && !linkinput.is("[value^=https://]"))
+						linkinput.val("https://");
 				else
 					linkinput.val(thisHrefLink);
 			}
