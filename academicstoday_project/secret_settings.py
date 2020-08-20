@@ -3,7 +3,7 @@ import sys
 #---------------------------------------------------------------------------#
 # Generic                                                                   #
 #---------------------------------------------------------------------------#
-SECRET_DEBUG = False
+SECRET_DEBUG = True
 SECRET_SECRET_KEY = 'xd#vc@mec1c0+wz^y&_i^-og&oy$mkn%_yky&xe^fo()mio$up'
 SECRET_ALLOWED_HOSTS = ['127.0.0.1', 'academ-test.herokuapp.com']
 
@@ -31,5 +31,5 @@ SECRET_EMAIL_HOST_PASSWORD = ''
 if 'test' in sys.argv:
     APPLICATION_HAS_ADVERTISMENT = False  # (DO NOT MODIFY)
 else:
-    APPLICATION_HAS_ADVERTISMENT = True  # (True = Yes I want advertisments)
+    APPLICATION_HAS_ADVERTISMENT = False  # (True = Yes I want advertisments)
 APPLICATION_HAS_PUBLIC_ACCESS_TO_TEACHERS = True
