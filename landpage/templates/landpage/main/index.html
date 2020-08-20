@@ -136,89 +136,6 @@
 {% endif %}
 
 
-<!--              -->
-<!-- Team Section -->
-<!--              -->
-<section id="team" class="bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Meet the team who are passionate about eductating the current generation and beyond!</h3>
-            </div>
-        </div>
-        <div class="row">
-            {% for team_member in team_members %}
-            <div class="col-sm-4">
-                <div class="team-member">
-                    <img src="{% static 'img/' %}{{ team_member.image_filename }}"
-                       class="img-responsive img-circle" alt="">
-                    <h4>{{ team_member.full_name }}</h4>
-                    <p class="text-muted">{{ team_member.role }}</p>
-                    <ul class="list-inline social-buttons">
-                        <li>
-                            {% if team_member.twitter_url != None %}
-                            <a href="{{ team_member.twitter_url }}">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            {% endif %}
-                        </li>
-                        <li>
-                            {% if team_member.facebook_url != None %}
-                            <a href="{{ team_member.facebook_url }}">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            {% elif team_member.google_url != None %}
-                            <a href="{{ team_member.google_url }}">
-                                <i class="fa fa-google"></i>
-                            </a>
-                            {% endif %}
-                        </li>
-                        <li>
-                            {% if team_member.linkedin_url != None %}
-                            <a href="{{ team_member.linkedin_url }}">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            {% elif team_member.github_url != None %}
-                            <a href="{{ team_member.github_url }}">
-                                <i class="fa fa-github"></i>
-                            </a>
-                            {% endif %}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <p class="large text-muted">Follow us on your favourite social-networking site. We appreciate your support.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Clients Aside -->
-<aside class="clients">
-    <div class="container">
-        <div class="row">
-            {% for partner in partners %}
-            <div class="col-md-3 col-sm-6">
-                <a href="https://{{ partner.url }}">
-                    <img src="{% static 'img/' %}logos/{{ partner.image_filename }}"
-                       class="img-responsive img-centered"
-                         alt=""{{ partner.title }}>
-                </a>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</aside>
-
-
-
 <!-- Contact Us Section -->
 <section id="contact">
     <div class="container">
@@ -246,7 +163,7 @@
                                 <p id="id_contact_phone_danger" class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class="form-group">
                                 {{ contact_form.message }}
                                 <p id="id_contact_message_danger" class="help-block text-danger"></p>
