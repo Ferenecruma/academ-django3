@@ -18,37 +18,36 @@
                 </div>
                 {% endfor %}
             </div>
-            <div class="col-lg-4">
-                        <!-- BODY -->
-                <canvas id="canvas"></canvas>
-                <div style="display:none;">
-                <img id="hat" src="{% static "/img/hat.png" %}"
-                    width="380" height="234">
-                </div>
-                
-                <center style="padding:10px; margin:5px">
-                    <h4>
-                        <span id="status">Model Loading ...</span>
-                    </h4>
-                </center>
-                <center style="padding:10px">
-                    <button type="button" id='start' class="btn btn-outline-primary" onclick='startVideo()'>Start Video</button>
-                </center>
-                
-                <div class="far_far_away">
-                    <center><span id="original_video"></span></center>
-                    <video id='video' width="400px"></video>
-                </div> 
 
-                <div class="far_far_away">
-                    <center><span id="emotion_video"></span></center>
-                    <canvas id="canvas" src="" style=" margin-top:10px;" />
+        <!-- /.Multiple-Choice Questions -->
+        <!-- Canvas and model loading button -->
+
+            <div class="col-lg-4">
+                <div class="container">
+                            <!-- BODY -->
+                    <canvas id="canvas" style="display: None;"></canvas>
+                    <div style="display:none;">
+                    <img id="hat" src="{% static "/img/hat.png" %}"
+                        width="380" height="234">
+                    </div>
+                    <h4><span id="status">Model Loading ...</span></h4>
+                    <button type="button" id='start' class="btn btn-outline-primary" onclick='startVideo()'>Start Video</button>
+
+                    <div class="far_far_away">
+                       <span id="original_video"></span>
+                        <video id='video' width="400px" ></video>
+                    </div>
+
+                    <div class="far_far_away">
+                        <span id="emotion_video"></span>
+                        <canvas id="canvas" style=" margin-top:10px ; display: None;" />
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- /.Multiple-Choice Questions -->
-        
+        <!-- Canvas and model loading button -->
         <!-- Exam description -->
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">

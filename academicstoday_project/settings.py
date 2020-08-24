@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import sys
-import django_heroku
 
 # Import variables for our application. Basically all imported variables
 # have a SECRET_* prefix.
@@ -171,4 +170,4 @@ MEDIA_URL = '/media/'
 
 # Heroku support
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
