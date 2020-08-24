@@ -5,7 +5,7 @@ import sys
 #---------------------------------------------------------------------------#
 SECRET_DEBUG = True
 SECRET_SECRET_KEY = 'xd#vc@mec1c0+wz^y&_i^-og&oy$mkn%_yky&xe^fo()mio$up'
-SECRET_ALLOWED_HOSTS = ['127.0.0.1', 'academ-test.herokuapp.com']
+SECRET_ALLOWED_HOSTS = ['172.104.133.142', '127.0.0.1', 'academ-test.herokuapp.com']
 
 
 #---------------------------------------------------------------------------#
