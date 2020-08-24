@@ -24,28 +24,31 @@
 
             <div class="col-lg-4">
                 <div class="container">
-                            <!-- BODY -->
-                    <canvas id="canvas" style="display: None;"></canvas>
+                           <!-- BODY -->
+                    <canvas id="canvas"></canvas>
                     <div style="display:none;">
-                    <img id="hat" src="{% static "/img/hat.png" %}"
-                        width="380" height="234">
+                    <img id="hat" src="{% static "img/hat.png" %}" width="380" height="234">
                     </div>
-                    <h4><span id="status">Model Loading ...</span></h4>
-                    <button type="button" id='start' class="btn btn-outline-primary" onclick='startVideo()'>Start Video</button>
 
+                    <h4>
+                        <span id="status">Model Loading ...</span>
+                    </h4>
+                   
+                    <button type="button" id='start' class="btn btn-outline-primary" onclick='startVideo()'>Start Video</button>
+                    
                     <div class="far_far_away">
-                       <span id="original_video"></span>
-                        <video id='video' width="400px" ></video>
-                    </div>
+                        <span id="original_video"></span>
+                        <video id='video' width="400px"></video>
+                    </div> 
 
                     <div class="far_far_away">
                         <span id="emotion_video"></span>
-                        <canvas id="canvas" style=" margin-top:10px ; display: None;" />
+                        <canvas id="canvas" src="" style=" margin-top:10px;" />
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Canvas and model loading button -->
+                    <!-- Canvas and model loading button -->
         <!-- Exam description -->
 
         <div class="row">
